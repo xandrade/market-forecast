@@ -28,14 +28,17 @@ The purchase, sale or advice regarding a currency can only be performed by a lic
 
 You must clearly understand this: Information contained here and in the alert service(s) is not an invitation to trade any specific investments. Trading requires risking money in pursuit of future gain. That is your decision. Do not risk any money you cannot afford to lose. This document does not take into account your own individual financial and personal circumstances. It is intended for educational purposes only and NOT as individual investment advice. Do not act on this without advice from your investment professional who will verify what is suitable for your particular needs and circumstances. Failure to seek detailed professional, personally tailored advice prior to acting could lead you to act contrary to your own best interests and could lead to losses of capital.
 
-# Cloning the repository
+
+# Development
+
+## Cloning the repository
 
 1. Create a projects folder (if you don't have one): `mkdir path_to_project_folder`
 2. Go to the projects folder: `$ cd path_to_project_folder`
 3. To clone a repository with git clone <url>. `$ git clone https://github.com/xandrade/alpha-api.git`
 
 
-# Linux (Ubuntu-20.04) through WSL 2
+## Linux (Ubuntu-20.04) through WSL 2
 
 1. Go to the project folder, for example: `$ cd path_to_project_folder`
 2. Create virtual enviroment: `$ python3 -m venv .venv`
@@ -57,7 +60,7 @@ You must clearly understand this: Information contained here and in the alert se
 1. Go to the project folder `$ cd path_to_project`
 2. Activate environment `$ source .venv/bin/activate`
 3. Go to app folder `$ cd ./alpha-api/app`
-4. Run `$ python main.py`
+4. Run `$ streamlit run main.py`
 
 ## Running in product
 
@@ -65,3 +68,7 @@ You must clearly understand this: Information contained here and in the alert se
 2. Activate environment `$ source .venv/bin/activate`
 3. Go to app folder `$ cd ./alpha-api/app`
 4. Run `$ hypercorn --bind '0.0.0.0:5000'  main:app -w 1 --worker-class uvloop`
+
+# ToDo
+
+Try using [/PyScript](https://pyscript.net/) to run the app.
